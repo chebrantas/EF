@@ -11,6 +11,8 @@ namespace EF2018MVC.Models.EntityTypeConfiguration
         public LodgingConfiguration()
         {
             Property(l => l.Name).IsRequired().HasMaxLength(200);
+            Property(l => l.MilesFromNearestAirport).HasPrecision(8, 2);
+
         }
     }
 }

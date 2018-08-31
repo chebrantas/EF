@@ -23,6 +23,12 @@ namespace EF2018MVC.Models
             modelBuilder.Configurations.Add(new LodgingConfiguration());
             modelBuilder.Configurations.Add(new TripConfiguration());
             modelBuilder.Configurations.Add(new PersonConfiguration());
+            modelBuilder.Configurations.Add(new AddressConfiguration());
+
+
+            //complex type visada rasomi paskutiniai
+            modelBuilder.ComplexType<Address>();
+            modelBuilder.ComplexType<PersonalInfo>();
 
 
             base.OnModelCreating(modelBuilder);

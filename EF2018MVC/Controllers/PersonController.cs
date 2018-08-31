@@ -46,7 +46,7 @@ namespace EF2018MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SocialSecurityNumber,FirstName,LastName,RowVersion")] Person person)
+        public ActionResult Create([Bind(Include = "SocialSecurityNumber,FirstName,LastName,RowVersion,Info,Address")] Person person)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace EF2018MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "SocialSecurityNumber,FirstName,LastName,RowVersion")] Person person)
+        public ActionResult Edit([Bind(Include = "SocialSecurityNumber,FirstName,LastName,RowVersion,Info,Address")] Person person)
         {
             if (ModelState.IsValid)
             {

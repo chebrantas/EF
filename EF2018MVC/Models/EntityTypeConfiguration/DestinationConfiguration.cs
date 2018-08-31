@@ -13,6 +13,9 @@ namespace EF2018MVC.Models.EntityTypeConfiguration
             Property(d => d.Name).IsRequired();
             Property(d => d.Description).HasMaxLength(500);
             Property(d => d.Photo).HasColumnType("image");
+
+            ////relationship 1 to Many
+            //HasMany(d => d.Lodgings).WithRequired(l => l.Destination);
         }
     }
 }

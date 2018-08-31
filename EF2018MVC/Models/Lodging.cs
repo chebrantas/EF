@@ -12,6 +12,11 @@ namespace EF2018MVC.Models
         public string Name { get; set; }
         public string Owner { get; set; }
         public bool IsResort { get; set; }
+        public decimal MilesFromNearestAirport { get; set; }
+
+     
+        //reference property sitas vadinasi
         public Destination Destination { get; set; }
+        public int DestinationId { get; set; }
     }
 }

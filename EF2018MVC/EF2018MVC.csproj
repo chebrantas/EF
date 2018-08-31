@@ -154,22 +154,28 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DestinationController.cs" />
     <Compile Include="Controllers\EntityFrameworkController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LodgingController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Controllers\TripController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Address.cs" />
     <Compile Include="Models\BreakAwayContext.cs" />
     <Compile Include="Models\BreakAwayInitializer.cs" />
     <Compile Include="Models\Destination.cs" />
     <Compile Include="Models\EntityTypeConfiguration\DestinationConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\LodgingConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\PersonConfiguration.cs" />
+    <Compile Include="Models\EntityTypeConfiguration\AddressConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\TripConfiguration.cs" />
     <Compile Include="Models\Lodging.cs" />
+    <Compile Include="Models\Measurement.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\PersonalInfo.cs" />
     <Compile Include="Models\Trip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -212,21 +218,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\EntityFramework\Create.cshtml" />
-    <Content Include="Views\EntityFramework\Delete.cshtml" />
-    <Content Include="Views\EntityFramework\Details.cshtml" />
-    <Content Include="Views\EntityFramework\Edit.cshtml" />
-    <Content Include="Views\EntityFramework\Index.cshtml" />
-    <Content Include="Views\Person\Create.cshtml" />
-    <Content Include="Views\Person\Delete.cshtml" />
-    <Content Include="Views\Person\Details.cshtml" />
-    <Content Include="Views\Person\Edit.cshtml" />
-    <Content Include="Views\Person\Index.cshtml" />
     <Content Include="Views\Trip\Create.cshtml" />
     <Content Include="Views\Trip\Delete.cshtml" />
     <Content Include="Views\Trip\Details.cshtml" />
     <Content Include="Views\Trip\Edit.cshtml" />
     <Content Include="Views\Trip\Index.cshtml" />
+    <Content Include="Views\Person\Create.cshtml" />
+    <Content Include="Views\Person\Delete.cshtml" />
+    <Content Include="Views\Person\Details.cshtml" />
+    <Content Include="Views\Person\Edit.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Destination\Create.cshtml" />
+    <Content Include="Views\Destination\Delete.cshtml" />
+    <Content Include="Views\Destination\Details.cshtml" />
+    <Content Include="Views\Destination\Edit.cshtml" />
+    <Content Include="Views\Destination\Index.cshtml" />
+    <Content Include="Views\Lodging\Create.cshtml" />
+    <Content Include="Views\Lodging\Delete.cshtml" />
+    <Content Include="Views\Lodging\Details.cshtml" />
+    <Content Include="Views\Lodging\Edit.cshtml" />
+    <Content Include="Views\Lodging\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
