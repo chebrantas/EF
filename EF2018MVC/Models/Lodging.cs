@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EF2018MVC.Models
@@ -14,9 +15,14 @@ namespace EF2018MVC.Models
         public bool IsResort { get; set; }
         public decimal MilesFromNearestAirport { get; set; }
 
-     
+
+        public Person PrimaryContact { get; set; }
+        public Person SecondaryContact { get; set; }
+
         //reference property sitas vadinasi
         public Destination Destination { get; set; }
         public int DestinationId { get; set; }
+
+        public List<InternetSpecial> InternetSpecials { get; set; }
     }
 }

@@ -168,10 +168,12 @@
     <Compile Include="Models\BreakAwayInitializer.cs" />
     <Compile Include="Models\Destination.cs" />
     <Compile Include="Models\EntityTypeConfiguration\DestinationConfiguration.cs" />
+    <Compile Include="Models\EntityTypeConfiguration\InternetSpecialConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\LodgingConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\PersonConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\AddressConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\TripConfiguration.cs" />
+    <Compile Include="Models\InternetSpecial.cs" />
     <Compile Include="Models\Lodging.cs" />
     <Compile Include="Models\Measurement.cs" />
     <Compile Include="Models\Person.cs" />

@@ -11,7 +11,15 @@ namespace EF2018MVC.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public byte[] RowVersion { get; set; }
+        
+
+        //sukurti keli bidirection rysiai tap 2 lenteliu
+        public List<Lodging> PrimaryContactFor { get; set; }
+        public List<Lodging> SecondaryContactFor { get; set; }
+
         public PersonalInfo Info { get; set; }
         public Address Address { get; set; }
+
+       
     }
 }

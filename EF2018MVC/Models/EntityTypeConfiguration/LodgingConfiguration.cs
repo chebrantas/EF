@@ -13,6 +13,8 @@ namespace EF2018MVC.Models.EntityTypeConfiguration
             Property(l => l.Name).IsRequired().HasMaxLength(200);
             Property(l => l.MilesFromNearestAirport).HasPrecision(8, 2);
 
+            HasOptional(l => l.PrimaryContact).WithMany(p => p.PrimaryContactFor);
+            HasOptional(l => l.SecondaryContact).WithMany(p => p.SecondaryContactFor);
         }
     }
 }

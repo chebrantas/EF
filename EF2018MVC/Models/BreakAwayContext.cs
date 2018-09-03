@@ -24,6 +24,8 @@ namespace EF2018MVC.Models
             modelBuilder.Configurations.Add(new TripConfiguration());
             modelBuilder.Configurations.Add(new PersonConfiguration());
             modelBuilder.Configurations.Add(new AddressConfiguration());
+            modelBuilder.Configurations.Add(new InternetSpecialConfiguration());
+
 
 
             //complex type visada rasomi paskutiniai
