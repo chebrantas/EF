@@ -14,6 +14,8 @@ namespace EF2018MVC.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal CostUSD { get; set; }
+
+        public List<Activity> Activities { get; set; }
         public byte[] RowVersion { get; set; }
     }
 }

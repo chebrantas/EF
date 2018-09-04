@@ -163,21 +163,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\BreakAwayContext.cs" />
     <Compile Include="Models\BreakAwayInitializer.cs" />
     <Compile Include="Models\Destination.cs" />
+    <Compile Include="Models\EntityTypeConfiguration\ActivityConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\DestinationConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\InternetSpecialConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\LodgingConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\PersonConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\AddressConfiguration.cs" />
+    <Compile Include="Models\EntityTypeConfiguration\PersonPhotoConfiguration.cs" />
     <Compile Include="Models\EntityTypeConfiguration\TripConfiguration.cs" />
     <Compile Include="Models\InternetSpecial.cs" />
     <Compile Include="Models\Lodging.cs" />
     <Compile Include="Models\Measurement.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
+    <Compile Include="Models\PersonPhoto.cs" />
     <Compile Include="Models\Trip.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -220,11 +224,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Trip\Create.cshtml" />
-    <Content Include="Views\Trip\Delete.cshtml" />
-    <Content Include="Views\Trip\Details.cshtml" />
-    <Content Include="Views\Trip\Edit.cshtml" />
-    <Content Include="Views\Trip\Index.cshtml" />
     <Content Include="Views\Person\Create.cshtml" />
     <Content Include="Views\Person\Delete.cshtml" />
     <Content Include="Views\Person\Details.cshtml" />
@@ -235,6 +234,11 @@
     <Content Include="Views\Destination\Details.cshtml" />
     <Content Include="Views\Destination\Edit.cshtml" />
     <Content Include="Views\Destination\Index.cshtml" />
+    <Content Include="Views\Trip\Create.cshtml" />
+    <Content Include="Views\Trip\Delete.cshtml" />
+    <Content Include="Views\Trip\Details.cshtml" />
+    <Content Include="Views\Trip\Edit.cshtml" />
+    <Content Include="Views\Trip\Index.cshtml" />
     <Content Include="Views\Lodging\Create.cshtml" />
     <Content Include="Views\Lodging\Delete.cshtml" />
     <Content Include="Views\Lodging\Details.cshtml" />

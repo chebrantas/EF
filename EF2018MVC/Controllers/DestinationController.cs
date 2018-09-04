@@ -96,11 +96,13 @@ namespace EF2018MVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Destination destination = db.Destinations.Find(id);
             if (destination == null)
             {
                 return HttpNotFound();
             }
+
             return View(destination);
         }
 

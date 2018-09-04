@@ -17,8 +17,7 @@ namespace EF2018MVC.Controllers
         // GET: Lodging
         public ActionResult Index()
         {
-            var lodgings = db.Lodgings.Include(l => l.Destination);
-            return View(lodgings.ToList());
+            return View(db.Lodgings.ToList());
         }
 
         // GET: Lodging/Details/5
@@ -39,7 +38,6 @@ namespace EF2018MVC.Controllers
         // GET: Lodging/Create
         public ActionResult Create()
         {
-            ViewBag.DestinationId = new SelectList(db.Destinations, "DestinationId", "Name");
             return View();
         }
 
@@ -48,7 +46,7 @@ namespace EF2018MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "LodgingId,Name,Owner,IsResort,MilesFromNearestAirport,DestinationId")] Lodging lodging)
+        public ActionResult Create([Bind(Include = "LodgingId,Name,Owner,IsResort,MilesFromNearestAirport,LocationId")] Lodging lodging)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +55,6 @@ namespace EF2018MVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.DestinationId = new SelectList(db.Destinations, "DestinationId", "Name", lodging.DestinationId);
             return View(lodging);
         }
 
@@ -73,7 +70,6 @@ namespace EF2018MVC.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.DestinationId = new SelectList(db.Destinations, "DestinationId", "Name", lodging.DestinationId);
             return View(lodging);
         }
 
@@ -82,7 +78,7 @@ namespace EF2018MVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "LodgingId,Name,Owner,IsResort,MilesFromNearestAirport,DestinationId")] Lodging lodging)
+        public ActionResult Edit([Bind(Include = "LodgingId,Name,Owner,IsResort,MilesFromNearestAirport,LocationId")] Lodging lodging)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +86,6 @@ namespace EF2018MVC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.DestinationId = new SelectList(db.Destinations, "DestinationId", "Name", lodging.DestinationId);
             return View(lodging);
         }
 

@@ -25,6 +25,10 @@ namespace EF2018MVC.Models
             modelBuilder.Configurations.Add(new PersonConfiguration());
             modelBuilder.Configurations.Add(new AddressConfiguration());
             modelBuilder.Configurations.Add(new InternetSpecialConfiguration());
+            modelBuilder.Configurations.Add(new ActivityConfiguration());
+            modelBuilder.Configurations.Add(new PersonPhotoConfiguration());
+
+
 
 
 

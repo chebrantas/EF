@@ -17,6 +17,8 @@ namespace EF2018MVC.Models
         public List<Lodging> PrimaryContactFor { get; set; }
         public List<Lodging> SecondaryContactFor { get; set; }
 
+        public PersonPhoto Photo { get; set; }
+
         public PersonalInfo Info { get; set; }
         public Address Address { get; set; }
 
