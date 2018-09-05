@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EF2018MVC.Models
 {
+    //[Table("Locations",Schema ="baga")]
     public class Destination
     {
         public int DestinationId { get; set; }

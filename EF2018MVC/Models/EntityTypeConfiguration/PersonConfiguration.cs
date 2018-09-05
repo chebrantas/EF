@@ -14,6 +14,8 @@ namespace EF2018MVC.Models.EntityTypeConfiguration
             HasKey(p => p.SocialSecurityNumber);
             Property(p => p.SocialSecurityNumber).HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
             Property(p => p.RowVersion).IsRowVersion();
+
+            ToTable("People");
         }
     }
 }
