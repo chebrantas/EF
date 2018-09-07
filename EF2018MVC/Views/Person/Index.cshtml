@@ -18,6 +18,9 @@
             @Html.DisplayNameFor(model => model.LastName)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.FullName)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.RowVersion)
         </th>
         <th>
@@ -38,6 +41,9 @@
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.FullName)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.RowVersion)
         </td>
         <td>
@@ -47,9 +53,9 @@
             @Html.DisplayFor(modelItem => item.Address)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.SocialSecurityNumber }) |
-            @Html.ActionLink("Details", "Details", new { id=item.SocialSecurityNumber }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.SocialSecurityNumber })
+            @Html.ActionLink("Edit", "Edit", new { id = item.SocialSecurityNumber }) |
+            @Html.ActionLink("Details", "Details", new { id = item.SocialSecurityNumber }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.SocialSecurityNumber })
         </td>
     </tr>
 }

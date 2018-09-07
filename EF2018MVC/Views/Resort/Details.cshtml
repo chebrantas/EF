@@ -1,0 +1,74 @@
+﻿@model EF2018MVC.Models.Resort
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resort</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Destination.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Destination.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsResort)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsResort)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilesFromNearestAirport)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilesFromNearestAirport)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Entertainment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Entertainment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Activities)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activities)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LodgingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

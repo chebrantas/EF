@@ -15,6 +15,9 @@ namespace EF2018MVC.Models
         public DbSet<Person> Persons { get; set; }
 
 
+        public DbSet<Resort> Resort { get; set; }
+
+
         //naudojam kad visus nustatymus duomenu bazei atliktu pagal nurodymus ko nepadare automatiskai . visi nustatymai sudeti i 
         //Models/EntityTypeConfiguration o is ten uzloadinami OnModelCreating metodu
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,6 +30,15 @@ namespace EF2018MVC.Models
             modelBuilder.Configurations.Add(new InternetSpecialConfiguration());
             modelBuilder.Configurations.Add(new ActivityConfiguration());
             modelBuilder.Configurations.Add(new PersonPhotoConfiguration());
+
+            //toks aprasas klase itraukia i duomenu base kaip lentele taip pat nereikia jokiu papildomu nustatymu
+            modelBuilder.Configurations.Add(new ReservationConfiguration());
+
+
+
+            //jei turime klase ir nenorime kad ji butu modelio dalis, o tik naudaojama atmintyje
+            //ne kaip lentele duombazeje naudojame sekancia eilute
+            //modelBuilder.Ignore<Reservation>();
 
 
 
