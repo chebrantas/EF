@@ -109,6 +109,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivator, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivator.1.4\lib\NETFramework40\WebActivator.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -184,6 +187,7 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PersonalInfo.cs" />
     <Compile Include="Models\PersonPhoto.cs" />
+    <Compile Include="Models\PromptForDropCreateDatabaseWhenModelChanges.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Resort.cs" />
     <Compile Include="Models\Trip.cs" />

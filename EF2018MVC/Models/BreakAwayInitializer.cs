@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace EF2018MVC.Models
 {
-    public class BreakAwayInitializer : System.Data.Entity.DropCreateDatabaseAlways<BreakAwayContext>
+    public class BreakAwayInitializer : DropCreateDatabaseAlways<BreakAwayContext>
     {
         protected override void Seed(BreakAwayContext context)
         {
@@ -16,7 +17,7 @@ namespace EF2018MVC.Models
                 Description = "EcoTourism at its best in exquisite Bali"
             });
             context.Lodgings.Add(new Lodging { Name = "Ilgas kelias namo per kopas", Destination = new Destination { Country = "Lithuania", Name = "Kaunas", Description = "Krepsinio sostine" }, IsResort = true });
-            base.Seed(context);
+            
             context.Destinations.Add(new Destination
             {
                 Country = "Russia",
@@ -27,6 +28,7 @@ namespace EF2018MVC.Models
                     new Lodging{Name="Lodging Two"}
                 }
             });
+            base.Seed(context);
         }
     }
 }

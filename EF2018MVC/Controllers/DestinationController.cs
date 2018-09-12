@@ -12,6 +12,8 @@ namespace EF2018MVC.Controllers
 {
     public class DestinationController : Controller
     {
+        //sitas naudojamas jei BreakAwayContext apsirasome konstruktoriu su parametružduombazes vardas
+        //private BreakAwayContext db = new BreakAwayContext("Duombaze");
         private BreakAwayContext db = new BreakAwayContext();
 
         // GET: Destination

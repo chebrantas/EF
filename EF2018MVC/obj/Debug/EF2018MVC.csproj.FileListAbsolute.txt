@@ -95,3 +95,4 @@ C:\Users\LKM\Documents\Visual Studio 2013\Projects\EF2018MVC\EF2018MVC\bin\Micro
 C:\Users\LKM\Documents\Visual Studio 2013\Projects\EF2018MVC\EF2018MVC\obj\Debug\EF2018MVC.csproj.CopyComplete
 C:\Users\LKM\Documents\Visual Studio 2013\Projects\EF2018MVC\EF2018MVC\obj\Debug\EF2018MVC.dll
 C:\Users\LKM\Documents\Visual Studio 2013\Projects\EF2018MVC\EF2018MVC\obj\Debug\EF2018MVC.pdb
+C:\Users\LKM\Documents\Visual Studio 2013\Projects\EF2018MVC\EF2018MVC\bin\WebActivator.dll

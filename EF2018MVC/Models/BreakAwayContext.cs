@@ -9,6 +9,22 @@ namespace EF2018MVC.Models
 {
     public class BreakAwayContext:DbContext
     {
+        //sitas naudojamas kad nemestu klaidos kur jau inicializuojama be duombazes stringo
+        public BreakAwayContext()
+        {
+
+        }
+        //sitas variantas naudojamas, kai nurodoma koki connectionstringa naudoti 
+        //public BreakAwayContext():base("name=DuombazesConnectionString")
+        //{
+
+        //}
+
+        //sitas naudojamas jei norime sukurti is kart ir duombazes vardas suteikiamas
+        //public BreakAwayContext(string databaseName) : base("Duombaze")
+        //{
+
+        //}
         public DbSet<Destination> Destinations { get; set; }
         public DbSet<Lodging> Lodgings { get; set; }
         public DbSet<Trip> Trips { get; set; }

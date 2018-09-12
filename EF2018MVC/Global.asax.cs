@@ -14,7 +14,11 @@ namespace EF2018MVC
     {
         protected void Application_Start()
         {
+            //standartinis initializer
             Database.SetInitializer(new BreakAwayInitializer());
+
+            //initializeris ant consoles
+            //Database.SetInitializer(new PromptForDropCreateDatabaseWhenModelChanges<BreakAwayContext>());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
